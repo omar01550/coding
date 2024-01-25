@@ -45,7 +45,7 @@ const AboutSection = () => {
             </button>
             
           </div>
-          <div className="mt-8 flex justify-between items-center flex-wrap bg-gray-900 p-5 rounded-md">
+          <div className="mt-8 flex justify-between items-center flex-wrap bg-gray-900 p-3 md:p-6 rounded-md">
             <Image src={tsImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3 rounded-lg"/>
             <Image src={jsImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>
             <Image src={reactImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>

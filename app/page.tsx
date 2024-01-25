@@ -6,10 +6,14 @@ import ProjectsSection from "./components/ProjectsSection";
 // import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
+import { Description } from "@mui/icons-material";
 
 
 
-
+export const metadata = {
+    title:'coding team ',
+    description:"we will give you smart degital soulution for your business"
+}
 
 export default function Home() {
   return (
