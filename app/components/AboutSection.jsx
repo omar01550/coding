@@ -1,47 +1,23 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
-import TabButton from "./TabButton";
+  import TabButton from "./TabButton";
 import aboutImage from '../images/about-image.png'
+import tsImage from '../images/tech/ts.png'
+import jsImage from "../images/tech/js.webp"
+import reactImage from '../images/tech/react..png'
+import nextImage from '../images/tech/next.png'
+import dartImage from '../images/tech/dart.webp'
+import cSharpImage from '../images/tech/c.png'
+import net from '../images/tech/net.webp'
+import dart from '../images/tech/dart.webp'
+import flutter from '../images/tech/flutter.webp'
+import cssImage from '../images/tech/css.webp'
+import figma from '../images/tech/figma.webp'
 
-const TAB_DATA = [
-  {
-    title: "Skills",
-    id: "skills",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Next js </li>
-        <li>React js</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>c#</li>
-        <li>.net</li>
-        <li>kotlen</li>
-        <li>flutter</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Education",
-    id: "education",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
-    ),
-  },
-];
+
+
+
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -58,7 +34,7 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image src={aboutImage} width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">About Coding</h2>
           <p className="text-base lg:text-lg">
          2+ years of digital solutions and information technology
 
@@ -69,8 +45,20 @@ const AboutSection = () => {
             </button>
             
           </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+          <div className="mt-8 flex justify-between items-center flex-wrap bg-gray-900 p-5 rounded-md">
+            <Image src={tsImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3 rounded-lg"/>
+            <Image src={jsImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>
+            <Image src={reactImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>
+            <Image src={nextImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3 rounded-full"/>
+            <Image src={cSharpImage} alt="not found" className="w-[50px] h-[50px] m-8 mt-3 rounded-lg"/>
+            <Image src={net} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>
+            <Image src={dart} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>
+            <Image src={flutter} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>
+            <Image src={figma} alt="not found" className="w-[50px] h-[50px] m-8 mt-3"/>
+            
+            
+            
+
           </div>
         </div>
       </div>
